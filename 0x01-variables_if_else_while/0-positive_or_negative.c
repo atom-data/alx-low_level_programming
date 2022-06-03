@@ -5,9 +5,10 @@
 /**
  * main - Determine the sign of a number
  *
- * Description - we are to determine the sign of random number n
- * Return : compilation is succesful
+ * Return: when successful
  */
+
+/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
