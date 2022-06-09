@@ -23,11 +23,10 @@ void more_numbers(void)
 		{
 			int k;
 
-			for (k = 0; k <= 4; k++)
-			{
-				_putchar(1 + '0');
-				_putchar(k + '0');
-			}
+			k = j % 10;
+
+			_putchar('1');
+			_putchar(k + '0');
 
 		}
 
