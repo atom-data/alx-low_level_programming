@@ -21,7 +21,7 @@ int main(void)
 
 		if (l == 0)
 		{
-			printf("%s ", "FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
 		else if (k == 0)
 		{
