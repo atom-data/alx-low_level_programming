@@ -20,13 +20,26 @@ int main(void)
 		l = j + k;
 
 		if (l == 0)
+		{
 			printf("%s ", "FizzBuzz");
+		}
 		else if (k == 0)
-			printf("%s ", "Buzz");
+		{
+			printf("%s", "Buzz");
+		}
 		else if (j == 0)
-			printf("%s ", "Fizz");
+		{
+			printf("%s", "Fizz");
+		}
 		else
-			printf("%d ", i);
+		{
+			printf("%d", i);
+		}
+
+		if (i != 100)
+		{
+			printf(" ");
+		}
 
 	}
 
