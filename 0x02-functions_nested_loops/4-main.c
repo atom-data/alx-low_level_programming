@@ -14,7 +14,7 @@ int main(void)
 	_putchar(r +  '0');
 	r = _isalpha('o');
 	_putchar(r + '0');
-	r = _alpha(108);
+	r = _isalpha(108);
 	_putchar(r + '0');
 	r = _isalpha(';');
 	_putchar(r + '0');
