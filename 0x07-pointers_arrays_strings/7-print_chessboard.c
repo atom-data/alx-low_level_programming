@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - print the chessboard
- * a: array of 8 by 8 integers
+ *@a: array of 8 by 8 integers
  */
 
 void print_chessboard(char (*a)[8])
