@@ -14,7 +14,7 @@ int main(void)
 
 	unsigned int n;
 
-	n = strspn(s, f);
+	n = _strspn(s, f);
 	printf("%u\n", n);
 
 	return (0);
