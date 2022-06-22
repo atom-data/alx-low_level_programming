@@ -3,7 +3,7 @@
 /**
  * square_func - confirms if the square of a given numbers is equal to an input
  * @n: integer input
- * @s - integer to be squared
+ * @s: integer to be squared
  *
  * Return: -1 for input that is perfect, s otherwise
  */
@@ -22,6 +22,8 @@ int square_func(int n, int s)
 /**
  * _sqrt_recursion -Find natural square root of a number
  * @n: integer input to be found
+ *
+ * Return: same as square_func
  */
 
 int _sqrt_recursion(int n)
