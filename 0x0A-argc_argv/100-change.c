@@ -3,8 +3,8 @@
 
 /**
  * main - print minimum number of coins to make change
- * @argc: number arguments passed 
- * @argv: vector of pointers to strings
+ * @argc: number arguments passed
+ * @argv: vector pointers to strings
  *
  * Return: 0 if succesful, 1 otherwise
  */
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i, j, k, l;
 	int cent[5];
-	
+
 	cent[0] = 25;
 	cent[1] = 10;
 	cent[2] = 5;
