@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	unsigned int i;
 	unsigned int k;
-	unsigned int sum = 0;
+	unsigned int sum = 1;
 	char *ptr;
 
 	if (str == NULL)
@@ -30,5 +30,6 @@ char *_strdup(char *str)
 	{
 		ptr[k] = *(str + k);
 	}
+	ptr[sum] = '\0';
 	return (ptr);
 }
