@@ -3,6 +3,8 @@
 /**
  * malloc_checked - allocate memory
  * @b: size of memory
+ *
+ * Return: Nothing
  */
 
 void *malloc_checked(unsigned int b)
