@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
- * malloc - reallocate memory block using malloc and free
- * @ptr: pointer to memory previously allocated
- * @old_size: size of allocated space
- * @new_size: size of the new memory block
+ * _realloc - reallocates a memory block using malloc and free.
+ * @ptr: pointer to previously allocated memory
+ * @old_size: size of allocated space for ptr
+ * @new_size: size of newly allocated space
  *
- * Return: pointer to the reallocated memory
+ * Return: pointer to newly allocated memory, or NULL if failure
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int i;
-	unsigned int max = new_size;
-	char *point;
-	char *oldpoint = ptr;
+	char *p;
+	unsigned int i, max = new_size;
+	char *oldp = ptr;
 
 	if (ptr == NULL)
 	{
-		point = malloc(new_size);
-		return (point);
+		p = malloc(new_size);
+		return (p);
 	}
 	else if (new_size == 0)
 	{
@@ -28,17 +27,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else if (new_size == old_size)
 		return (ptr);
-
-	point = malloc(new_size);
-
-	if (point == NULL)
+	p = malloc(new_size);
+	if (p == NULL)
 		return (NULL);
 	if (new_size > old_size)
 		max = old_size;
 	for (i = 0; i < max; i++)
-		point[i] = oldpoint[i];
+		p[i] = oldp[i];
 	free(ptr);
-	return (0);
-
-
+	return (p);
 }
