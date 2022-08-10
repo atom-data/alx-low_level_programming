@@ -1,1 +1,1 @@
-A readme on debugging
+A readme on the debugging project.
