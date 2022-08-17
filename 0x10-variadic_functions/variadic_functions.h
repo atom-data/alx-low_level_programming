@@ -1,6 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
+#include <stdarg.h>
+
 /**
  * struct print - print type with corresponding print function
  * @t: print type
@@ -10,7 +12,7 @@
 typedef struct print
 {
 	char *t;
-	void (*f)(valist);
+	void (*f)(va_list);
 } print_t;
 
 int _putchar(char c);
